@@ -1,17 +1,149 @@
-
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Younglings Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <script src="https://kit.fontawesome.com/88ab583ffc.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="menu-icon">
+        <i class="fa fa-bars fa-2x"></i>
+      </div>
+
+      <!-- <div class="logo">
+        <img
+          style="height: 50px; width: 100px;"
+          id="logoMain"
+          src="img/logo.png"
+          alt="Logo"
+        />
+      </div> -->
+      <div class="menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <canvas id="warp"></canvas> -->
+    <div id="hero-section" style="margin-bottom: 50px;">
+      <div id="hero-container">
+        <h1 id="name">RUBEN VERSTER</h1>
+        <h2 id="description">Web Developer</h2>
+      </div>
+    </div>
+
+    <!-- <div id="message">
+      <p class="item-1">
+        “You can have everything in life you want, if you will just help other
+        people get what they want” - Zig Zigglar
+      </p>
+      <p class="item-2">
+        “If you want to go fast, go alone. If you want to go far, go together” -
+        African Proverb
+      </p>
+      <p class="item-3">
+        “If one can do it, I can do it. If no one can do it, I must” - Japanese
+        Proverb
+      </p>
+    </div> -->
+    <div class="container">
+      <div>
+        <h1>ABOUT</h1>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h2>Biography</h2>
+          <p>
+            Self-taught Web Developer constantly sharpening current skillset as
+            well as developing further knowledge of current technologies used in
+            the industry.
+          </p>
+          <p>
+            Logical and systematical method of thinking. But I can whip out
+            Paint for minor design
+          </p>
+          <p>
+            The future is now and we have the power to shape dreams into reality
+          </p>
+        </div>
+        <div>
+          <h2>Interests</h2>
+          <p>Artificial Intelligence</p>
+          <p>Blockchain Development</p>
+          <p>Machine Learning</p>
+          <p>AR/VR</p>
+        </div>
+      </div>
+
+      <div>
+        <h1>TECHNOLOGY STACK</h1>
+      </div>
+      <div>
+        <div class="skills">
+          <img src="img/logos/css3.png" alt="CSS3" />
+          <img src="img/logos/html5.png" alt="HTML5" />
+          <img src="img/logos/js.svg" alt="JS6" />
+
+          <img src="img/logos/bootstrap.svg" alt="Bootstrap" />
+          <img src="img/logos/git.png" alt="Git" />
+          <img src="img/logos/php.png" alt="PHP" />
+        </div>
+      </div>
+
+      <div>
+        <h1>CONTACT</h1>
+      </div>
+      <div>
+        <form class="contact" method="post" action="contact-form-handler.php">
+          <input
+            placeholder="Name"
+            name="name"
+            type="text"
+            tabindex="1"
+            required=""
+          />
+          <input
+            placeholder="Email Address"
+            name="email"
+            type="email"
+            tabindex="2"
+            required=""
+          />
+          <input
+            placeholder="Phone Number"
+            name="number"
+            type="tel"
+            tabindex="3"
+            required=""
+          />
+          <textarea
+            placeholder="Message"
+            name="message"
+            tabindex="4"
+            required=""
+          ></textarea>
+          <button type="submit" class="form-control submit" id="contact-submit">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <footer></footer>
+    <script src="warp/warpspeed.min.js"></script>
+    <script src="warp/warp.js"></script>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
-
