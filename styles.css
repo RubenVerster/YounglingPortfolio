@@ -30,11 +30,10 @@ html {
 /* *************** */
 
 .logo {
-  line-height: 50px;
-  position: fixed;
-  float: left;
-  margin: 1rem;
   color: #fff;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
 }
 
 nav {
@@ -55,7 +54,7 @@ nav ul {
   padding: 0;
   text-align: right;
   margin: 0;
-  padding-right: 2rem;
+
   transition: 1s;
 }
 
@@ -85,7 +84,13 @@ nav ul li a {
   color: #fff;
   display: none;
 }
-
+nav li a:hover {
+  color: white;
+}
+nav li:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transition: all 0.9 ease;
+}
 /* *************** */
 /*     GENERAL     */
 /* *************** */
@@ -121,7 +126,6 @@ a {
   box-shadow: #222 5px 5px 15px;
   margin: 20px;
   padding: 50px;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c1c1c1+0,ffffff+42,ffffff+42,ffffff+48,ffffff+58,c1c1c1+100 */
   background: rgb(193, 193, 193); /* Old browsers */
   background: -moz-linear-gradient(
     -45deg,
@@ -219,14 +223,14 @@ a {
 }
 
 @keyframes example {
-  20% {
+  30% {
     transform: rotateZ(20deg);
   }
-  40% {
+  60% {
     transform: rotateY(30deg);
     transform: rotateZ(-20deg);
   }
-  60% {
+  80% {
     transform: rotateY(360deg);
   }
 
@@ -405,10 +409,8 @@ footer a {
   }
 }
 @media (max-width: 786px) {
-  .logo {
-    position: fixed;
-    top: 0;
-    margin-top: 1rem;
+  .logo i {
+    color: #333;
   }
 
   nav ul {

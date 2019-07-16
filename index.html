@@ -22,7 +22,7 @@
       </div>
 
       <div class="logo">
-        <a class="link" href="#home"><i class="fas fa-home fa-4x"></i></a>
+        <a href="#home"><i class="fas fa-home fa-4x"></i></a>
       </div>
       <div class="menu">
         <ul>
@@ -30,36 +30,36 @@
           <li><a class="link" href="#tech">Tech Stack</a></li>
           <li><a class="link" href="#contact">Contact</a></li>
           <li>
-            <a class="link" href="#contact"
-              ><a
-                href="Ruben Verster Resume.pdf"
-                download="Ruben Verster Resume"
-              >
-                <i class="fas fa-download"></i> Resume
-              </a></a
-            >
+            <a href="Ruben Verster Resume.pdf" download="Ruben Verster Resume">
+              <i class="fas fa-download"></i> Resume
+            </a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="hero-section" id="home" style="position:relative;">
-      <div class="hero-content" style="position:absolute !important;z-index:2">
-        <h1 id="name">RUBEN VERSTER</h1>
-        <h2 id="description">Web Developer</h2>
-      </div>
+    <section>
+      <div class="hero-section" id="home" style="position:relative;">
+        <div
+          class="hero-content"
+          style="position:absolute !important;z-index:2"
+        >
+          <h1 id="name">RUBEN VERSTER</h1>
+          <h2 id="description">Web Developer</h2>
+        </div>
 
-      <canvas id="warp"></canvas>
-    </div>
+        <canvas id="warp"></canvas>
+      </div>
+    </section>
 
     <!-- <div id="message">
-      <p class="item-1">
-        “You can have everything in life you want, if you will just help other
-        people get what they want” - Zig Zigglar
-      </p>
-      <p class="item-2">
-        “If you want to go fast, go alone. If you want to go far, go together” -
-        African Proverb
-      </p>
+            <p class="item-1">
+              “You can have everything in life you want, if you will just help other
+              people get what they want” - Zig Zigglar
+            </p>
+            <p class="item-2">
+              “If you want to go fast, go alone. If you want to go far, go together” -
+              African Proverb
+            </p>
       <p class="item-3">
         “If one can do it, I can do it. If no one can do it, I must” - Japanese
         Proverb
@@ -67,38 +67,41 @@
     </div> -->
 
     <div class="container">
-      <div id="about">
-        <h1>ABOUT</h1>
-      </div>
-      <div class="grid-2">
-        <div class="card">
-          <h2>Biography</h2>
-          <p>
-            Web Developer constantly sharpening current skillset as well as
-            developing further knowledge of current technologies used in the
-            industry.
-          </p>
-          <p>
-            Logical and systematical method of thinking. But I can whip out
-            Paint for minor design
-          </p>
-          <p>
-            The future is now and we have the power to shape dreams into reality
-          </p>
-          <h3>Tomorrow,Today</h3>
+      <section>
+        <div id="about">
+          <h1>ABOUT</h1>
         </div>
-        <div class="card">
-          <h2 style="padding-bottom: 35px">Interests</h2>
-          <p>Artificial Intelligence</p>
-          <i class="fas fa-cloud fa-3x"></i>
-          <p>Cloud Development</p>
-          <i class="fas fa-cogs fa-3x"></i>
-          <p>Machine Learning</p>
-          <i class="fas fa-vr-cardboard fa-3x"></i>
-          <p>AR/VR</p>
+        <div class="grid-2">
+          <div class="card">
+            <h2>Biography</h2>
+            <p>
+              Web Developer constantly sharpening current skillset as well as
+              developing further knowledge of current technologies used in the
+              industry.
+            </p>
+            <p>
+              Logical and systematical method of thinking. But I can whip out
+              Paint for minor design
+            </p>
+            <p>
+              The future is now and we have the power to shape dreams into
+              reality
+            </p>
+            <h3>Tomorrow,Today</h3>
+          </div>
+          <div class="card">
+            <h2 style="padding-bottom: 35px">Interests</h2>
+            <p>Artificial Intelligence</p>
+            <i class="fas fa-cloud fa-3x"></i>
+            <p>Cloud Development</p>
+            <i class="fas fa-cogs fa-3x"></i>
+            <p>Machine Learning</p>
+            <i class="fas fa-vr-cardboard fa-3x"></i>
+            <p>AR/VR</p>
+          </div>
         </div>
-      </div>
-      <div>
+      </section>
+      <section>
         <div id="tech">
           <h1>TECHNOLOGY STACK</h1>
         </div>
@@ -124,57 +127,58 @@
             <i class="fas fa-wrench"></i> Projects</a
           >
         </div>
-      </div>
-
-      <div id="contact">
-        <h1>CONTACT</h1>
-      </div>
-      <div class="card">
-        <form class="contact" method="post" action="contact-form-handler.php">
-          <input
-            placeholder="Name"
-            name="name"
-            type="text"
-            tabindex="1"
-            required=""
-          />
-          <input
-            placeholder="Email Address"
-            name="email"
-            type="email"
-            tabindex="2"
-            required=""
-          />
-          <input
-            placeholder="Phone Number"
-            name="number"
-            type="tel"
-            tabindex="3"
-            required=""
-          />
-          <textarea
-            placeholder="Need Help With Anything?"
-            name="message"
-            tabindex="4"
-            required=""
-          ></textarea>
-
-          <button
-            type="submit"
-            class="form-control submit invisible"
-            id="contact-submit"
-          >
-            Send
-          </button>
-        </form>
-        <div id="capt">
-          <div
-            class="g-recaptcha"
-            data-sitekey="6Lde86wUAAAAAIR5eN6CMhoX5la6r5PC9mX1Qk07"
-            data-callback="recaptcha_callback"
-          ></div>
+      </section>
+      <section>
+        <div id="contact">
+          <h1>CONTACT</h1>
         </div>
-      </div>
+        <div class="card">
+          <form class="contact" method="post" action="contact-form-handler.php">
+            <input
+              placeholder="Name"
+              name="name"
+              type="text"
+              tabindex="1"
+              required=""
+            />
+            <input
+              placeholder="Email Address"
+              name="email"
+              type="email"
+              tabindex="2"
+              required=""
+            />
+            <input
+              placeholder="Phone Number"
+              name="number"
+              type="tel"
+              tabindex="3"
+              required=""
+            />
+            <textarea
+              placeholder="Need Help With Anything?"
+              name="message"
+              tabindex="4"
+              required=""
+            ></textarea>
+
+            <button
+              type="submit"
+              class="form-control submit invisible"
+              id="contact-submit"
+            >
+              Send
+            </button>
+          </form>
+          <div id="capt">
+            <div
+              class="g-recaptcha"
+              data-sitekey="6Lde86wUAAAAAIR5eN6CMhoX5la6r5PC9mX1Qk07"
+              data-callback="recaptcha_callback"
+            ></div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <footer class="">
