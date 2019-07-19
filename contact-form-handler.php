@@ -30,7 +30,7 @@
     $headers .= "From: " . $email_from . "\r\n"; // Sender's E-mail
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
  
- 
+
     //This is to check if the email was sent.
     if(mail($to,$email_subject,$email_body,$headers))
     {

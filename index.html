@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Younglings Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Permanent+Marker|Rubik+Mono+One&display=swap"
@@ -26,14 +28,13 @@
       </div>
       <div class="menu">
         <ul>
-          <li><a class="link" href="#about">About</a></li>
-          <li><a class="link" href="#tech">Tech Stack</a></li>
-          <li><a class="link" href="#contact">Contact</a></li>
-          <li>
-            <a href="Ruben Verster Resume.pdf" download="Ruben Verster Resume">
-              <i class="fas fa-download"></i> Resume
-            </a>
-          </li>
+          <a class="link" href="#about"><li>About</li></a>
+          <a class="link" href="#tech"><li>Tech Stack</li></a>
+          <a class="link" href="#contact"><li>Contact</li></a>
+          <a class="link" href="#projects"><li>Projects</li></a>
+          <a href="Ruben Verster Resume.pdf" download="Ruben Verster Resume"
+            ><li><i class="fas fa-download"></i> Resumé</li></a
+          >
         </ul>
       </div>
     </nav>
@@ -51,20 +52,6 @@
       </div>
     </section>
 
-    <!-- <div id="message">
-            <p class="item-1">
-              “You can have everything in life you want, if you will just help other
-              people get what they want” - Zig Zigglar
-            </p>
-            <p class="item-2">
-              “If you want to go fast, go alone. If you want to go far, go together” -
-              African Proverb
-            </p>
-      <p class="item-3">
-        “If one can do it, I can do it. If no one can do it, I must” - Japanese
-        Proverb
-      </p>
-    </div> -->
 
     <div class="container">
       <section>
@@ -115,38 +102,91 @@
           <img src="img/logos/php.png" alt="PHP" />
           <img src="img/logos/git.png" alt="Git" />
         </div>
-        <div class="grid-2">
-          <a
-            class="button"
-            href="Ruben Verster Resume.pdf"
-            download="Ruben Verster Resume"
-          >
-            <i class="fas fa-download"></i> Resume
-          </a>
-          <a class="button" href="projects.html">
-            <i class="fas fa-wrench"></i> Projects</a
-          >
-        </div>
       </section>
       <section>
+        <div id="projects">
+          <h1>PROJECTS</h1>
+        </div>
+        <div class="grid-3">
+          
+          <a target="_blank" href="https://rubenverster.com/projects/tsm-template/">
+            <div class="project-card">
+              <h3>TSMotorcycles</h3>
+              <img src="img/projects/tsm.png" width="100%" alt="" />
+              <div>
+                <i class="fab fa-html5 fa-2x"></i>
+                <i class="fab fa-css3-alt fa-2x"></i>
+                <i class="fab fa-js fa-2x"></i>
+                <i class="fab fa-php fa-2x"></i>
+              </div>
+                <p>
+                  Web client from a local business
+                </p>
+          </div>
+        </a>
+
+
+          <a target="_blank" href="https://rubenverster.com/cms">
+          <div class="project-card">
+              <h3>CMS</h3>
+              <img src="img/projects/CMS.png" width="100%" alt="" />
+              
+              <div>
+                <i class="fab fa-html5 fa-2x"></i>
+                <i class="fab fa-css3-alt fa-2x"></i>
+                <i class="fab fa-bootstrap fa-2x"></i>
+                <i class="fab fa-php fa-2x"></i>
+                <i class="fas fa-database fa-2x"></i>
+                <p>CMS for managing blog posts</p>
+              </div>
+            </div>
+            </a>
+
+            
+            <a target="_blank" href="https://rubenverster.com/projects/dreamshare">
+  <div class="project-card">
+    <h3>CSV to Code</h3>
+            <img src="img/projects/dreamshare.png" width="100%" alt="" />
+
+            <div>
+              <i class="fab fa-html5 fa-2x"></i>
+              <i class="fab fa-css3-alt fa-2x"></i>
+              <p>Website created from a CSV template</p>
+            </div>
+          </div>
+        </a>
+          
+
+
+        </section>
+
+
+          <a
+          class="button"
+           href="Ruben Verster Resume.pdf"
+          download="Ruben Verster Resume"
+          >
+          <i class="fas fa-download"></i> Resumé
+        </a>
+      <section  style="margin-top: 50px">
         <div id="contact">
           <h1>CONTACT</h1>
         </div>
-        <div class="card">
+        <div class="card" id="form">
           <form class="contact" method="post" action="contact-form-handler.php">
             <input
-              placeholder="Name"
-              name="name"
-              type="text"
-              tabindex="1"
-              required=""
+            placeholder="Name"
+            name="name"
+            type="text"
+            tabindex="1"
+            required=""
             />
             <input
-              placeholder="Email Address"
-              name="email"
-              type="email"
-              tabindex="2"
-              required=""
+            placeholder="Email Address"
+            name="email"
+            type="email"
+            tabindex="2"
+            required=""
             />
             <input
               placeholder="Phone Number"
@@ -154,14 +194,14 @@
               type="tel"
               tabindex="3"
               required=""
-            />
-            <textarea
+              />
+              <textarea
               placeholder="Need Help With Anything?"
               name="message"
               tabindex="4"
               required=""
             ></textarea>
-
+            
             <button
               type="submit"
               class="form-control submit invisible"
@@ -175,24 +215,25 @@
               class="g-recaptcha"
               data-sitekey="6Lde86wUAAAAAIR5eN6CMhoX5la6r5PC9mX1Qk07"
               data-callback="recaptcha_callback"
-            ></div>
+              ></div>
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
 
-    <footer class="">
+        
+    <footer>
       <a href="https://github.com/RubenVerster"
         ><i class="fab fa-git-alt fa-3x"></i
-      ></a>
-      <a href="https://www.linkedin.com/in/ruben-verster-735312105/"
+          ></a>
+          <a href="https://www.linkedin.com/in/ruben-verster-735312105/"
         ><i class="fab fa-linkedin fa-3x"></i
       ></a>
       <br />
       <br />
       <a href="https://www.rubenverster.com">Ruben Verster © 2019 </a>
     </footer>
-
+    
     <script src="warp/warpspeed.min.js"></script>
     <script src="warp/warp.js"></script>
     <script src="main.js"></script>
