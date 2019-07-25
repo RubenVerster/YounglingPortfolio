@@ -37,3 +37,13 @@ $(document).ready(function() {
     } // End if
   });
 });
+
+// Darken Nav on Scroll
+
+$(window).on('scroll', function() {
+  if ($(window).scrollTop()) {
+    $('nav').addClass('black');
+  } else {
+    $('nav').removeClass('black');
+  }
+});

@@ -70,6 +70,7 @@ nav ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 1.5rem;
+  transition: 0.8s all ease-in-out;
 }
 
 .menu-icon {
@@ -84,14 +85,9 @@ nav ul li a {
   display: none;
 }
 nav ul a li:hover {
-  color: #222;
-  font-size: 1.4rem;
-  font-weight: 800;
+  text-shadow: 0px 0px 10px white;
 }
-nav li:hover {
-  background: rgba(255, 255, 255, 0.5);
-  transition: all 0.9 ease;
-}
+
 /* *************** */
 /*     GENERAL     */
 /* *************** */
@@ -106,7 +102,7 @@ h1 {
   font-size: 5rem;
   font-family: 'Rubik Mono One', sans-serif;
   color: #fff;
-  text-shadow: #222 5px 5px 15px;
+  text-shadow: #222 3px 3px 5px;
   text-align: center;
 }
 h2 {
@@ -183,11 +179,14 @@ a {
   display: grid;
   align-items: center;
 }
+#name {
+  text-shadow: blue 0px 2px 2px, red 0px -2px 2px;
+}
 #description {
   color: white;
   font-family: 'Permanent Marker';
   font-size: 50px;
-  text-shadow: #431fc4 0px 8px 20px;
+  text-shadow: 0px 4px 20px #431fc4, 0px -4px 20px rgb(167, 11, 11);
 }
 #warp {
   height: 100vh;
@@ -201,7 +200,7 @@ a {
 /* *************** */
 .grid-2 {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, 1fr);
   margin: 0 auto;
   padding: 50px;
 }
@@ -242,8 +241,8 @@ a {
 
 .skills img {
   animation-name: example;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-iteration-count: 5;
 }
 
 .button {
@@ -314,11 +313,10 @@ a {
   margin: 0 0 0.3rem;
   min-width: 100%;
   padding: 0;
-  width: 100%;
   background: #111;
 }
 .contact textarea {
-  height: 15rem;
+  height: 10rem;
 }
 .contact input[type='text'],
 .contact input[type='email'],
@@ -395,12 +393,12 @@ footer {
   position: bottom;
   margin-top: 50px;
   padding: 35px;
-  background: white;
+  background: #222;
 }
 
 footer i,
 .card i {
-  color: #333;
+  color: #fff;
   margin: 0 50px;
 }
 
@@ -411,7 +409,7 @@ footer i:hover,
 }
 
 footer a {
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 

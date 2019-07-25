@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122159357-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122159357-1');
+</script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -12,6 +23,7 @@
       href="https://fonts.googleapis.com/css?family=Permanent+Marker|Rubik+Mono+One&display=swap"
       rel="stylesheet"
     />
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script src="https://kit.fontawesome.com/88ab583ffc.js"></script>
@@ -54,10 +66,9 @@
 
 
     <div class="container">
-      <section>
-        <div id="about">
+      <section id="about">
           <h1>ABOUT</h1>
-        </div>
+
         <div class="grid-2">
           <div class="card">
             <h2>Biography</h2>
@@ -103,16 +114,15 @@
           <img src="img/logos/git.png" alt="Git" />
         </div>
       </section>
-      <section>
-        <div id="projects">
+      <section id="projects">
           <h1>PROJECTS</h1>
-        </div>
+
         <div class="grid-3">
           
           <a target="_blank" href="https://rubenverster.com/projects/tsm-template/">
             <div class="project-card">
               <h3>TSMotorcycles</h3>
-              <img src="img/projects/tsm.png" width="100%" alt="" />
+              <img src="img/projects/tsm.png" width="100%" alt="TSMotorcycles" />
               <div>
                 <i class="fab fa-html5 fa-2x"></i>
                 <i class="fab fa-css3-alt fa-2x"></i>
@@ -125,11 +135,10 @@
           </div>
         </a>
 
-
           <a target="_blank" href="https://rubenverster.com/cms">
           <div class="project-card">
               <h3>CMS</h3>
-              <img src="img/projects/CMS.png" width="100%" alt="" />
+              <img src="img/projects/CMS.png" width="100%" alt="CMS" />
               
               <div>
                 <i class="fab fa-html5 fa-2x"></i>
@@ -141,23 +150,19 @@
               </div>
             </div>
             </a>
-
             
             <a target="_blank" href="https://rubenverster.com/projects/dreamshare">
-  <div class="project-card">
-    <h3>CSV to Code</h3>
-            <img src="img/projects/dreamshare.png" width="100%" alt="" />
+              <div class="project-card">
+              <h3>CSV to Code</h3>
+                <img src="img/projects/dreamshare.png" width="100%" alt="CSV to Code" />
 
-            <div>
+                <div>
               <i class="fab fa-html5 fa-2x"></i>
               <i class="fab fa-css3-alt fa-2x"></i>
               <p>Website created from a CSV template</p>
             </div>
           </div>
         </a>
-          
-
-
         </section>
 
 
@@ -168,10 +173,8 @@
           >
           <i class="fas fa-download"></i> Resumé
         </a>
-      <section  style="margin-top: 50px">
-        <div id="contact">
+      <section  id="contact" style="margin-top: 50px">
           <h1>CONTACT</h1>
-        </div>
         <div class="card" id="form">
           <form class="contact" method="post" action="contact-form-handler.php">
             <input
@@ -223,10 +226,13 @@
 
         
     <footer>
-      <a href="https://github.com/RubenVerster"
-        ><i class="fab fa-git-alt fa-3x"></i
+      <a target="_blank" href="https://github.com/RubenVerster"
+        ><i class="fab fa-github fa-3x"></i
           ></a>
-          <a href="https://www.linkedin.com/in/ruben-verster-735312105/"
+      <a target="_blank" href="https://www.freecodecamp.org/rubenverster"
+        ><i class="fab fa-free-code-camp fa-3x"></i
+          ></a>
+          <a target="_blank" href="https://www.linkedin.com/in/ruben-verster-735312105/"
         ><i class="fab fa-linkedin fa-3x"></i
       ></a>
       <br />
@@ -237,6 +243,8 @@
     <script src="warp/warpspeed.min.js"></script>
     <script src="warp/warp.js"></script>
     <script src="main.js"></script>
+
+    <!-- shows the send button when captcha is checked -->
     <script>
       function recaptcha_callback() {
         let register = document.getElementById('contact-submit');
